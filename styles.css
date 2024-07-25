@@ -1,35 +1,40 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8ecec;
+    background-color: #ffffff;
     color: #333;
+    text-align: center;
+    margin: 0; /* Remove default margin */
 }
 
 header {
-    background-color: #ffe0e0;
+    background-color: #ffffff;
     padding: 20px;
 }
 
 .header-content {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
 }
 
 .text-section {
-    text-align: left;
-    max-width: 60%;
+    text-align: center;
+    width: 100%;
 }
 
 .text-section h1 {
-    margin: 0;
+    margin: 20px 0;
 }
 
 .image-section {
-    max-width: 35%;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .image-section img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -41,7 +46,6 @@ button {
     margin: 10px 0;
     cursor: pointer;
     border-radius: 5px;
-    display: inline-block;
 }
 
 button:hover {
@@ -58,7 +62,18 @@ button:hover {
 }
 
 footer {
-    background-color: #ffe0e0;
+    background-color: #fffdfdce;
     padding: 10px;
     text-align: center;
+}
+
+.play-icon i {
+    font-size: 5rem; /* 5 times the default size */
+    cursor: pointer;
+}
+
+.play-icon {
+    display: inline-block; /* Ensure the container scales with the icon */
+    line-height: 0; /* Remove extra spacing */
+    margin-top: 20px; /* Space between elements */
 }

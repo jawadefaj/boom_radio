@@ -5,39 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BanglaRise.live</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="header-content">
             <div class="text-section">
-                <h1>২৮ এর ছাত্র আন্দোলন</h1>
-                <button id="playRadio">Play</button>
+                <div class="image-section">
+                    <img src="raw.png" alt="Header Image" style="width: 400px; height: auto;">
+                </div>
+                <div class="image-section">
+                    <img src="logo.png" alt="Header Image" style="width: 400px; height: auto;">
+                </div>
+                <div class="play-icon">
+                    <i class="fas fa-play" onclick="playAudio()"></i>
+                </div>
+                <audio id="radioPlayer" src="https://s5.radio.co/s5fa3ce8b2/listen" type="audio/mpeg"></audio>
             </div>
-            <div class="image-section">
-                <canvas id="animationCanvas" width="600" height="600"></canvas>
-            </div>
-            <script src="script.js"></script>
+            
         </div>
     </header>
-    <section class="topics">
-        <h2>Voice your opinion</h2>
-        <div class="topic">
-            <h3>Question 1?</h3>
-            <button class="recordButton">Record</button>
-        </div>
-        <div class="topic">
-            <h3>Question 2?</h3>
-            <button class="recordButton">Record</button>
-        </div>
-        <div class="topic">
-            <h3>Q 3?</h3>
-            <button class="recordButton">Record</button>
-        </div>
-    </section>
+
     <footer>
         <p>BanglaRise.live</p>
-        <p>Location: somewhere</p>
-        <p>Contact: <a href="mailto:email@example.com">email@example.com</a></p>
+        <p>#<a href="">StepDownHasina</a></p>
     </footer>
     <script src="script.js"></script>
 </body>
