@@ -1,7 +1,6 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f8ecec;
-    text-align: center;
     color: #333;
 }
 
@@ -10,14 +9,39 @@ header {
     padding: 20px;
 }
 
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-section {
+    text-align: left;
+    max-width: 60%;
+}
+
+.text-section h1 {
+    margin: 0;
+}
+
+.image-section {
+    max-width: 35%;
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+}
+
 button {
     background-color: #ff6666;
     border: none;
     color: white;
     padding: 10px 20px;
-    margin: 10px;
+    margin: 10px 0;
     cursor: pointer;
     border-radius: 5px;
+    display: inline-block;
 }
 
 button:hover {
@@ -26,12 +50,15 @@ button:hover {
 
 .topics {
     margin: 20px;
+    text-align: left;
+}
+
+.topic {
+    margin-bottom: 20px;
 }
 
 footer {
     background-color: #ffe0e0;
     padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    text-align: center;
 }
